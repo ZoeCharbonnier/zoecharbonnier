@@ -1,9 +1,20 @@
-<mat-toolbar>
-  <span routerLink="/">Zoé Charbonnier - Full Stack Developer</span>
-  <span routerLink="/about">Me</span>
-  <span routerLink="/experience">Experience</span>
-  <span routerLink="/projects">Projects</span>
-  <span routerLink="/italent">ITalent</span>
-  <span routerLink="/contact">Contact</span>
-</mat-toolbar>
-<router-outlet></router-outlet>
+<div class="flex justify-center">
+  <div class="w-6/12">
+    <mat-toolbar class="">
+      <div class="flex flex-grow flex-row items-center justify-between">
+        <div routerLink="/" class="">
+          <div>Zoé Charbonnier</div>
+          <div>Full Stack Developer</div>
+        </div>
+        <div class="flex gap-5">
+          <div routerLink="/about">Me</div>
+          <div routerLink="/experience">Experience</div>
+          <div routerLink="/projects">Projects</div>
+          <div routerLink="/italent">ITalent</div>
+          <div routerLink="/contact">Contact</div>
+        </div>
+      </div>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+  </div>
+</div>
