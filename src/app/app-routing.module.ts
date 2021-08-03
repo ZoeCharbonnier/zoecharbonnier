@@ -24,6 +24,21 @@ const routes: Routes = [
         loadChildren: () =>
           import('./projects/projects.module').then((m) => m.ProjectsModule),
       },
+      {
+        path: 'italent',
+        loadChildren: () =>
+          import('./italent/italent.module').then((m) => m.ItalentModule),
+      },
+      {
+        path: 'contact',
+        loadChildren: () =>
+          import('./contact/contact.module').then((m) => m.ContactModule),
+      },
+      {
+        path: '',
+        loadChildren: () =>
+          import('./about/about.module').then((m) => m.AboutModule),
+      },
     ],
   },
 ];
