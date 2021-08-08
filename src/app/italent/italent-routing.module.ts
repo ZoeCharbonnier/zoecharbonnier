@@ -8,6 +8,11 @@ const routes: Routes = [
     component: ItalentComponent,
     children: [
       {
+        path: 'plan',
+        loadChildren: () =>
+          import('./plan/plan.module').then((m) => m.PlanModule),
+      },
+      {
         path: 'projects',
         loadChildren: () =>
           import('../projects/projects.module').then((m) => m.ProjectsModule),
