@@ -11,9 +11,7 @@ export class ProjectListComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  navigateToFlutter(): void {
-    console.log('HIER');
-
-    this.router.navigateByUrl('/projects/flutter');
+  navigateTo(path: string): void {
+    this.router.navigateByUrl(`/projects/${path}`);
   }
 }

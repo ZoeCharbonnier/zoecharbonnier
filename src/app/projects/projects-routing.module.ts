@@ -8,16 +8,28 @@ const routes: Routes = [
     component: ProjectsComponent,
     children: [
       {
-        path: 'flutter',
-        loadChildren: () =>
-          import('./flutter/flutter.module').then((m) => m.FlutterModule),
-      },
-      {
         path: '',
         loadChildren: () =>
           import('./project-list/project-list.module').then(
             (m) => m.ProjectListModule
           ),
+      },
+      {
+        path: 'flutter',
+        loadChildren: () =>
+          import('./flutter/flutter.module').then((m) => m.FlutterModule),
+      },
+      {
+        path: 'salesforce',
+        loadChildren: () =>
+          import('./salesforce/salesforce.module').then(
+            (m) => m.SalesforceModule
+          ),
+      },
+      {
+        path: 'website',
+        loadChildren: () =>
+          import('./website/website.module').then((m) => m.WebsiteModule),
       },
     ],
   },
