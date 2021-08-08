@@ -10,7 +10,23 @@
           <div routerLink="/about">Me</div>
           <div routerLink="/experience">Experience</div>
           <div routerLink="/projects">Projects</div>
-          <div routerLink="/italent">ITalent</div>
+
+          <div>
+            <button mat-button [matMenuTriggerFor]="italent">
+              <div>ITalent</div>
+            </button>
+            <mat-menu #italent="matMenu">
+              <button mat-menu-item routerLink="/italent/projects">
+                Projects
+              </button>
+              <button mat-menu-item routerLink="/italent/x-factor">
+                X-Factor
+              </button>
+              <button mat-menu-item routerLink="/italent/reflection">
+                Reflection
+              </button>
+            </mat-menu>
+          </div>
           <div routerLink="/contact">Contact</div>
         </div>
       </div>

@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "mywebsite-434bb": {
+      "hosting": {
+        "my-website": [
+          "mywebsite-434bb"
+        ]
+      }
+    }
+  }
+}
