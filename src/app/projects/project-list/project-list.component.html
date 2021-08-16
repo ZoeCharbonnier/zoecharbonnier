@@ -1,32 +1,48 @@
-<div class="grid grid-cols-3 gap-5">
+<div class="flex flex-row gap-20 justify-center mb-20">
   <div (click)="navigateTo('flutter')">
     <mat-card>
       <mat-card-header>
-        <mat-card-title>Flutter</mat-card-title>
+        <mat-card-title><div class="text-2xl">Flutter</div></mat-card-title>
+        <!-- <div class="text-2xl">Flutter</div> -->
       </mat-card-header>
       <mat-card-content>
-        <img src="../../../assets/Flutter.png" alt="flutter" />
+        <div class="">
+          <img
+            class="w-60 h-60"
+            src="../../../assets/Flutter.png"
+            alt="flutter"
+          />
+        </div>
       </mat-card-content>
     </mat-card>
   </div>
   <div (click)="navigateTo('salesforce')">
     <mat-card>
       <mat-card-header>
-        <mat-card-title>Salesforce</mat-card-title>
+        <mat-card-title><div class="text-2xl">Salesforce</div></mat-card-title>
       </mat-card-header>
       <mat-card-content>
-        <img src="../../../assets/Salesforce.png" alt="salesforce" />
+        <img
+          class="h-60 w-60"
+          src="../../../assets/Salesforce.png"
+          alt="salesforce"
+        />
       </mat-card-content>
     </mat-card>
   </div>
   <div (click)="navigateTo('website')">
     <mat-card>
       <mat-card-header>
-        <mat-card-title>Own website</mat-card-title>
+        <mat-card-title><div class="text-2xl">Own website</div></mat-card-title>
       </mat-card-header>
       <mat-card-content>
-        <img src="../../../assets/Angular.png" alt="angular" />
+        <img
+          class="h-60 w-60"
+          src="../../../assets/Angular.png"
+          alt="angular"
+        />
       </mat-card-content>
     </mat-card>
   </div>
 </div>
+<div class="h-px"></div>
