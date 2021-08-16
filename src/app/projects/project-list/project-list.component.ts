@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { AppState } from 'src/app/shared/app.state';
 
 @Component({
   selector: 'app-project-list',
@@ -7,9 +8,17 @@ import { Router } from '@angular/router';
   styleUrls: ['./project-list.component.scss'],
 })
 export class ProjectListComponent implements OnInit {
-  constructor(private router: Router) {}
+  constructor(public appState: AppState, private router: Router) {
+    console.log(
+      '*** ProjectListComponent - constructor',
+      this.appState.header$.value
+    );
+  }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.appState.header$.next('Projects');
+    this.appState.subheader$.next('');
+  }
 
   navigateTo(path: string): void {
     this.router.navigateByUrl(`/projects/${path}`);

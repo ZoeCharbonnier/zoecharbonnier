@@ -1,15 +1,16 @@
 import { Component, OnInit } from '@angular/core';
+import { AppState } from 'src/app/shared/app.state';
 
 @Component({
   selector: 'app-x-factor',
   templateUrl: './x-factor.component.html',
-  styleUrls: ['./x-factor.component.scss']
+  styleUrls: ['./x-factor.component.scss'],
 })
 export class XFactorComponent implements OnInit {
-
-  constructor() { }
+  constructor(public appState: AppState) {}
 
   ngOnInit(): void {
+    this.appState.header$.next('X-Factor');
+    this.appState.subheader$.next('');
   }
-
 }

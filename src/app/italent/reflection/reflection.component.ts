@@ -1,15 +1,16 @@
 import { Component, OnInit } from '@angular/core';
+import { AppState } from 'src/app/shared/app.state';
 
 @Component({
   selector: 'app-reflection',
   templateUrl: './reflection.component.html',
-  styleUrls: ['./reflection.component.scss']
+  styleUrls: ['./reflection.component.scss'],
 })
 export class ReflectionComponent implements OnInit {
-
-  constructor() { }
+  constructor(public appState: AppState) {}
 
   ngOnInit(): void {
+    this.appState.header$.next('Reflection');
+    this.appState.subheader$.next('');
   }
-
 }
