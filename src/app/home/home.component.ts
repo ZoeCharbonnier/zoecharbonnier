@@ -23,4 +23,6 @@ export class HomeComponent implements OnInit {
       this.cd.detectChanges();
     });
   }
+
+  navigateToFacebook(): void {}
 }

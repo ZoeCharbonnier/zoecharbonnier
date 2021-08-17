@@ -1,19 +1,25 @@
 <div class="flex flex-row gap-20 justify-center mb-20">
   <div (click)="navigateTo('flutter')">
-    <mat-card>
+    <mat-card class="w-96 h-96">
+      <!-- <img
+        class="w-50 h-auto"
+        mat-card-image
+        src="../../../assets/Flutter.png"
+        alt="flutter"
+      /> -->
+      <!-- <mat-card-content>
+ 
+      </mat-card-content> -->
+      <div class="flex justify-self-center">
+        <img
+          class="w-60 h-60"
+          src="../../../assets/Flutter.png"
+          alt="flutter"
+        />
+      </div>
       <mat-card-header>
         <mat-card-title><div class="text-2xl">Flutter</div></mat-card-title>
-        <!-- <div class="text-2xl">Flutter</div> -->
       </mat-card-header>
-      <mat-card-content>
-        <div class="">
-          <img
-            class="w-60 h-60"
-            src="../../../assets/Flutter.png"
-            alt="flutter"
-          />
-        </div>
-      </mat-card-content>
     </mat-card>
   </div>
   <div (click)="navigateTo('salesforce')">
