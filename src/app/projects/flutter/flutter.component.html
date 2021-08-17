@@ -2,12 +2,48 @@
 <p class="text-justify">
   Na het vak mobile development wou ik mij graag verdiepen in de wereld van de
   mobiele applicatie ontwikkeling. aariXa organiseerde op 25 maart een seminarie
-  in het kader van Flutter. De course was ingedeeld in 2 delen: enerzijds was er
-  het theoretische deel waar de structuur en architectuur van Flutter-projecten
-  werd aangehaald. Anderzijds het praktijkgedeelte waar ingegaan werd op de
-  verschillende manieren van Dart classes schrijven. TO DO: verder uitwerken
-  aariXa academy
+  in het kader van Flutter. Jaarlijks worden er één of meer aariXa academies
+  georganiseerd, waar een gastspreker een nieuwe technologie uit de doeken komt
+  doen.
 </p>
+
+<p class="text-justify">
+  De sessie over Flutter werd gegeven door Peter Kassenaar. Hij heeft meer dan
+  20 jaar ervaring in web- en appdevelopment en heeft talloze boeken over
+  webdevelopment en verwante technieken gepubliceerd. Hij gaf een uitgebreid
+  programma dat uit twee delen bestond: enerzijds het theoretische deel waar de
+  structuur en architectuur van Flutter-projecten werd aangehaald. Anderzijds
+  het praktijkgedeelte waar ingegaan werd op de verschillende manieren van Dart
+  classes schrijven waarbij een live demo werd gegeven. Deze sessie heeft mij
+  geïnspireerd om Flutter als tweede technologie te kiezen en hiermee zelf aan
+  de slag te gaan. Ook Flutter's hot reload functie sprak mij enorm aan om snel
+  en gemakkelijk te experimenteren en UI's te bouwen. De agenda van het
+  seminarie zag er als volgt uit:
+</p>
+<img
+  class="h-96 w-auto border border-black border-opacity-10"
+  src="assets/flutter-agenda.png"
+  alt="agenda"
+/>
+
+<p>
+  Tijdens de live-demo werd een applicatie gebouwd die een lijst van landen
+  weergaf samen met de hoofdstad die gebruik maakte van de
+  <a
+    href="https://restcountries.eu/"
+    target="_blank"
+    class="underline hover:underline"
+    >REST countries API</a
+  >
+  om de data op te halen. De data werd getoond in een scrollable lijst.
+  Vervolgens werd de vlag van ieder land toegevoegd via een .svg icon. Hieronder
+  een screenshot van het resultaat.
+</p>
+<img
+  class="h-96 w-auto border border-black border-opacity-10"
+  src="assets/flutter-demo.png"
+  alt="agenda"
+/>
 
 <h2>Experimenteren</h2>
 <p class="text-justify">
@@ -42,24 +78,37 @@
 
 <h2>Uitvoeren</h2>
 <p class="text-justify">
-  Na mijn pas opgedane kennis was het tijd om een groter project te starten. De
-  YouTube-video die ik als basis gebruikt is er Reflectie Mijn eerste ervaring
-  met Flutter was zeker positief. Van het moment dat alles geïnstalleerd en
-  geconfigureerd is, kan je snel en gemakkelijk een eenvoudige applicatie
-  creëren. Ik heb weinig tot geen moeite gehad om alles werkende te krijgen
-  zonder tegen fouten te lopen met betrekking tot configuratie. De documentatie
-  van Flutter is duidelijk en gestructureerd waardoor je niet ver moet zoeken om
-  uitleg of codevoorbeelden te vinden. Flutter wint de laatste jaren aan
-  populariteit waardoor veel YouTube-video’s en codelabs makkelijk te vinden
-  zijn voor extra hulp. Een heel groot voordeel van Flutter vind ik de hot
-  reload feature die ervoor zorgt dat wijzigingen in de code meteen zichtbaar
-  zijn in de app waardoor je als ontwikkelaar korter op de bal kan spelen en
-  meteen kan bijsturen waar nodig. Ik herinner mij het project nog van mobile
-  development en .NET expert waar er ook gewerkt werd met een android virtual
-  device (AVD) waar de applicatie bij elke wijziging herstart moest worden. Zeer
-  onpraktisch en tijdrovend. Het experimenteren met Flutter was heel leuk en
-  leerrijk en ik wil mij in de toekomst zeker verder verdiepen in deze
-  technologie.
+  Na mijn pas opgedane kennis was het tijd om een groter project te starten. Ik
+  heb een bestaande PWA (progressive web app) van op het werk proberen nabootsen
+  in Flutter. Ik heb twee views gemaakt: een dossierlist view en een
+  dossierdetail view. Voor de dossierlist view wordt de data uit een lokale
+  json-file opgehaald. Voor deze view wordt er een aangepaste ‘StatefulWidget’
+  gebouwd. De code en resultaat ziet er als volgt uit:
+  <img
+    class="h-96 w-auto border border-black border-opacity-10"
+    src="assets/dossier-list.png"
+    alt="dossierlist"
+  />
+  <img
+    class="h-96 w-auto border border-black border-opacity-10"
+    src="assets/resultaat-dossierlist.jpg"
+    alt="dossierlist-resultaat"
+  />
+
+  Verder is er ook mogelijk om door te klikken naar het detail. Deze view maakt
+  gebruik van de geolocater plug-in van Flutter om de locatie van de gebruiker
+  op te halen.
+
+  <img
+    class="h-96 w-auto border border-black border-opacity-10"
+    src="assets/locatie-melding.jpg"
+    alt="locatie"
+  />
+  <img
+    class="h-96 w-auto border border-black border-opacity-10"
+    src="assets/detail.jpg"
+    alt="detail"
+  />
 </p>
 
 <h2>Reflecteren</h2>
@@ -77,7 +126,13 @@
   spelen en meteen kan bijsturen waar nodig. Ik herinner mij het project nog van
   mobile development en .NET expert waar er ook gewerkt werd met een android
   virtual device (AVD) waar de applicatie bij elke wijziging herstart moest
-  worden. Zeer onpraktisch en tijdrovend. Het experimenteren met Flutter was
-  heel leuk en leerrijk en ik wil mij in de toekomst zeker verder verdiepen in
-  deze technologie.
+  worden. Zeer onpraktisch en tijdrovend. De grootste uitdaging tijdens de
+  ontwikkeling van de Flutter-applicatie was om niet verloren te raken in de
+  structuur. In tegenstelling tot Angular waar de UI-code gescheiden wordt van
+  de business logica, worden deze in Flutter in dezelfde file gecodeerd. Als een
+  widget groeit in complexiteit en grootte, wordt de lay-out al snel verwarrend
+  en lijkt de business logica verloren te gaan in de code. Daarnaast wordt het
+  ook steeds moeilijker om de code te onderhouden. Het experimenteren met
+  Flutter was heel leuk en leerrijk en ik wil mij in de toekomst zeker verder
+  verdiepen in deze technologie.
 </p>
