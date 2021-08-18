@@ -1,124 +1,151 @@
-<h2>Ontdekken</h2>
-<p class="text-justify">
-  Aangezien Salesforce op mijn werk gebruikt wordt al Customer relationship
-  management syteem (CRM) en steeds meer development in Salesforce gedaan wordt
-  leek het mij interessant om mij te verdiepen in wat deze technologie te bieden
-  heeft. Salesforce.com is een internationaal bedrijf dat bedrijfssoftware
-  aanbiedt op het gebied van klantrelatiebeheer op basis van cloud computing. Om
-  een beter beeld te krijgen over Salesforce in het algemeen, kwam ik terecht op
-  de website van Trailhead, het leerplatform van Salesforce dat verschillende
-  modules aanbiedt van gebruiker tot beheerder.
-  <a
-    href="https://trailhead.salesforce.com/content/learn/modules/starting_force_com?trail_id=force_com_admin_beginner"
-    target="_blank"
-    class="underline hover:underline"
-  >
-    Deze website</a
-  >
-  geeft een duidelijke uitleg over de basis principes van Salesforce met de
-  nodige voorbeelden. Allereerst is het belangrijk om de terminologie te
-  begrijpen die gehanteerd wordt in de context van SF. Gekende elementen zoals
-  objecten en records nemen volgende vormen aan:
-</p>
+<div class="mb-20 mx-72">
+  <div class="text-5xl text-center mb-4">Ontdekken</div>
+  <div class="border-b-2 mb-12"></div>
+  <p class="text-justify text-xl pb-10">
+    Aangezien Salesforce op mijn werk gebruikt wordt al Customer relationship
+    management syteem (CRM) en steeds meer development in Salesforce gedaan
+    wordt leek het mij interessant om mij te verdiepen in wat deze technologie
+    te bieden heeft. Salesforce.com is een internationaal bedrijf dat
+    bedrijfssoftware aanbiedt op het gebied van klantrelatiebeheer op basis van
+    cloud computing. Om een beter beeld te krijgen over Salesforce in het
+    algemeen, kwam ik terecht op de website van Trailhead, het leerplatform van
+    Salesforce dat verschillende modules aanbiedt van gebruiker tot beheerder.
+    <a
+      href="https://trailhead.salesforce.com/content/learn/modules/starting_force_com?trail_id=force_com_admin_beginner"
+      target="_blank"
+      class="underline hover:underline"
+    >
+      Deze website</a
+    >
+    geeft een duidelijke uitleg over de basis principes van Salesforce met de
+    nodige voorbeelden. Allereerst is het belangrijk om de terminologie te
+    begrijpen die gehanteerd wordt in de context van SF. Gekende elementen zoals
+    objecten en records nemen volgende vormen aan:
+  </p>
+  <div class="flex justify-center gap-40 mb-10">
+    <img
+      class="border-black border-opacity-10 h-40 w-auto"
+      src="assets/salesforce-crm.png"
+      alt="salesforce"
+    />
+    <img
+      class="border border-black border-opacity-10 h-40 w-auto"
+      src="assets/crm-salesforce.png"
+      alt="salesforce"
+    />
+  </div>
 
-<img
-  class="border-black border-opacity-10"
-  src="assets/salesforce-crm.png"
-  alt="salesforce"
-/>
-<img
-  class="border border-black border-opacity-10"
-  src="assets/crm-salesforce.png"
-  alt="salesforce"
-/>
+  <ol class="list-decimal mb-10">
+    <li>
+      <p class="text-justify text-xl">
+        De applicatie: een app in Salesforce is een verzameling objecten, velden
+        en andere functionaliteit die een bedrijfsproces ondersteunt. “ICE” is
+        de applicatie die open staat in het voorbeeld.
+      </p>
+    </li>
+    <li>
+      <p class="text-justify text-xl">
+        Objecten: kunnen gezien worden als tabellen waarin bepaalde informatie
+        wordt opgeslagen. In bovenstaand voorbeeld zien we het object “Cases”.
+      </p>
+    </li>
+    <li>
+      <p class="text-justify text-xl">
+        Records: stellen de rijen van een tabel voor en bevatten de gegevens die
+        gekoppeld zijn aan een object.
+      </p>
+    </li>
+    <li>
+      <p class="text-justify text-xl">
+        Fields: stellen de kolommen van een tabel voor. In het voorbeeld zien we
+        velden zoals “Casenummer”, “Voornaam”…
+      </p>
+    </li>
+  </ol>
 
-<ol class="list-decimal">
-  <li>
-    De applicatie: een app in Salesforce is een verzameling objecten, velden en
-    andere functionaliteit die een bedrijfsproces ondersteunt. “ICE” is de
-    applicatie die open staat in het voorbeeld.
-  </li>
-  <li>
-    Objecten: kunnen gezien worden als tabellen waarin bepaalde informatie wordt
-    opgeslagen. In bovenstaand voorbeeld zien we het object “Cases”.
-  </li>
-  <li>
-    Records: stellen de rijen van een tabel voor en bevatten de gegevens die
-    gekoppeld zijn aan een object.
-  </li>
-  <li>
-    Fields: stellen de kolommen van een tabel voor. In het voorbeeld zien we
-    velden zoals “Casenummer”, “Voornaam”…
-  </li>
-</ol>
+  <p class="text-justify text-xl pb-10">
+    Als je naar de printscreens kijkt en de manier waarop data wordt opgeslagen
+    in SF lijkt het alsof je naar een user interface kijkt die bovenop een
+    relationele database zit. Alsof je geen code moet schrijven en via
+    point-and-click volledige apps kan bouwen. Het klinkt misschien vreemd maar
+    het Salesforce-platform moedigt aan om code te minimaliseren en biedt
+    verschillende point-and-click tools aan voor ontwikkeling. Bij minder
+    complexe projecten, hoef je het wiel niet opnieuw uit te vinden en kan je
+    gebruik maken van deze tools die weinig tot geen begrip van
+    ontwikkelingsprincipes vereisen. Ook voor grote, complexere implementaties
+    biedt het Salesforce platform de juiste basis. Zo kwam ik tot de ontdekking
+    dat er drie kerntechnologieën bestaan voor het coderen in Salesforce wanneer
+    point-and-click tools niet meer voldoen.
+  </p>
 
-<p class="text-justify">
-  Als je naar de printscreens kijkt en de manier waarop data wordt opgeslagen in
-  SF lijkt het alsof je naar een user interface kijkt die bovenop een
-  relationele database zit. Alsof je geen code moet schrijven en via
-  point-and-click volledige apps kan bouwen. Het klinkt misschien vreemd maar
-  het Salesforce-platform moedigt aan om code te minimaliseren en biedt
-  verschillende point-and-click tools aan voor ontwikkeling. Bij minder complexe
-  projecten, hoef je het wiel niet opnieuw uit te vinden en kan je gebruik maken
-  van deze tools die weinig tot geen begrip van ontwikkelingsprincipes vereisen.
-  Ook voor grote, complexere implementaties biedt het Salesforce platform de
-  juiste basis. Zo kwam ik tot de ontdekking dat er drie kerntechnologieën
-  bestaan voor het coderen in Salesforce wanneer point-and-click tools niet meer
-  voldoen.
-</p>
+  <ul class="list-disc mb-10">
+    <li>
+      <p class="text-justify text-xl">
+        Lightning Component Framework: een UI framework vergelijkbaar met
+        AngularJs of React.
+      </p>
+    </li>
+    <li>
+      <p class="text-justify text-xl">
+        Apex: Salesforce eigen programmeertaal met Java-achtige syntax.
+      </p>
+    </li>
+    <li>
+      <p class="text-justify text-xl">
+        Visualforce: een markup language waarmee je aangepaste
+        Salesforce-pagina's kunt maken met code die veel op HTML lijkt, en
+        optioneel gebruik kan maken van een krachtige combinatie van Apex en
+        JavaScript.
+      </p>
+    </li>
+  </ul>
 
-<ul class="list-disc">
-  <li>
-    Lightning Component Framework: een UI framework vergelijkbaar met AngularJs
-    of React.
-  </li>
-  <li>Apex: Salesforce eigen programmeertaal met Java-achtige syntax.</li>
-  <li>
-    Visualforce: een markup language waarmee je aangepaste Salesforce-pagina's
-    kunt maken met code die veel op HTML lijkt, en optioneel gebruik kan maken
-    van een krachtige combinatie van Apex en JavaScript.
-  </li>
-</ul>
+  <p class="text-justify text-xl">
+    Na het opdoen van deze theoretische kennis en na het bekijken van
+    verschillende basis courses met betrekking tot Salesforce was het tijd om
+    zelf te experimenteren. Op het werk moesten oude schadeformulieren een nieuw
+    jasje krijgen in Salesforce waarbij ik één van de formulieren heb gemaakt.
+  </p>
+</div>
+<div class="mb-20 mx-72">
+  <div class="text-5xl text-center mb-4">Uitvoeren</div>
+  <div class="border-b-2 mb-12"></div>
+  <p class="text-justify text-xl">
+    Gebaseerd op de oude forumulieren heb ik het autoschadeformulier herwerkt.
+    De structuur van het project ziet er als volgt uit:
+  </p>
+</div>
 
-<p class="text-justify">
-  Na het opdoen van deze theoretische kennis en na het bekijken van
-  verschillende basis courses met betrekking tot Salesforce was het tijd om zelf
-  te experimenteren. Op het werk moesten oude schadeformulieren een nieuw jasje
-  krijgen in Salesforce waarbij ik één van de formulieren heb gemaakt.
-</p>
-
-<h2>Uitvoeren</h2>
-<p>
-  Gebaseerd op de oude forumulieren heb ik het autoschadeformulier herwerkt. De
-  structuur van het project ziet er als volgt uit:
-</p>
-
-<h2>Reflecteren</h2>
-<p class="text-justify">
-  Vooraleer ik mij verdiepte in het development gedeelte van Salesforce, maakte
-  ik dagelijks gebruik van de bestaande CRM om klantgegevens te raadplegen en te
-  wijzigen. Ik vond het Salesforce platform altijd zeer gebruiksvriendelijk,
-  intuïtief en makkelijk om je weg te vinden. Nadat ik mij verdiept had in de
-  mogelijkheden dat het platform te bieden heeft besefte ik pas hoe flexibel en
-  customizable het is. Alle objecten kunnen volledig naar eigen wens aangepast
-  en ingesteld worden. Met behulp van de point-and-click tools kan iedereen
-  zonder programmeer ervaring het systeem gebruiken en beheren. Naast het
-  platform development was er ook het echte codeerwerk. Wat het programmeren in
-  Salesforce betreft was het in eerste instantie veel opzoekwerk om mijn weg te
-  vinden tussen de verschillende programmeertalen: lightning, apex, visualforce
-  en wanneer je wat het best gebruikt. Een tweede struikelpunt was de syntax.
-  Terwijl ik de schadeformulieren aan het herwerken was, moest ik voor school
-  projecten in Java, C# en Angular maken. Daar Salesforce nog eens bovenop
-  zorgde ervoor dat ik steeds veel moeite had om gewoon te raken aan de syntax.
-  Hoewel Salesforce een intuïtieve tool is, is het programmeren in Salesforce
-  niet van zelfsprekend en vergt het een hoge leercurve. Programmeren in
-  lightning en apex vond ik redelijk omslachtig en om die reden ga ik deze
-  programmeertalen niet snel gebruiken in de toekomst. Om de taal en het
-  platform onder de knie te krijgen is een intensieve training nodig om zo je
-  weg te vinden doorheen alle verschillende complexe en minder complexe
-  functionaliteiten die het platform te bieden heeft. Na het uitwerken van dit
-  project hebt ik nog steeds het gevoel dat ik enkel de basisprincipes doorheb
-  en dat er nog een lange weg te gaan is om het totaal pakket te begrijpen. Het
-  heeft mij helaas niet genoeg overtuigd om hier meer tijd en moeite in te
-  steken.
-</p>
+<div class="mb-20 mx-72">
+  <div class="text-5xl text-center mb-4">Reflecteren</div>
+  <div class="border-b-2 mb-12"></div>
+  <p class="text-justify text-xl">
+    Vooraleer ik mij verdiepte in het development gedeelte van Salesforce,
+    maakte ik dagelijks gebruik van de bestaande CRM om klantgegevens te
+    raadplegen en te wijzigen. Ik vond het Salesforce platform altijd zeer
+    gebruiksvriendelijk, intuïtief en makkelijk om je weg te vinden. Nadat ik
+    mij verdiept had in de mogelijkheden dat het platform te bieden heeft
+    besefte ik pas hoe flexibel en customizable het is. Alle objecten kunnen
+    volledig naar eigen wens aangepast en ingesteld worden. Met behulp van de
+    point-and-click tools kan iedereen zonder programmeer ervaring het systeem
+    gebruiken en beheren. Naast het platform development was er ook het echte
+    codeerwerk. Wat het programmeren in Salesforce betreft was het in eerste
+    instantie veel opzoekwerk om mijn weg te vinden tussen de verschillende
+    programmeertalen: lightning, apex, visualforce en wanneer je wat het best
+    gebruikt. Een tweede struikelpunt was de syntax. Terwijl ik de
+    schadeformulieren aan het herwerken was, moest ik voor school projecten in
+    Java, C# en Angular maken. Daar Salesforce nog eens bovenop zorgde ervoor
+    dat ik steeds veel moeite had om gewoon te raken aan de syntax. Hoewel
+    Salesforce een intuïtieve tool is, is het programmeren in Salesforce niet
+    van zelfsprekend en vergt het een hoge leercurve. Programmeren in lightning
+    en apex vond ik redelijk omslachtig en om die reden ga ik deze
+    programmeertalen niet snel gebruiken in de toekomst. Om de taal en het
+    platform onder de knie te krijgen is een intensieve training nodig om zo je
+    weg te vinden doorheen alle verschillende complexe en minder complexe
+    functionaliteiten die het platform te bieden heeft. Na het uitwerken van dit
+    project hebt ik nog steeds het gevoel dat ik enkel de basisprincipes doorheb
+    en dat er nog een lange weg te gaan is om het totaal pakket te begrijpen.
+    Het heeft mij helaas niet genoeg overtuigd om hier meer tijd en moeite in te
+    steken.
+  </p>
+</div>

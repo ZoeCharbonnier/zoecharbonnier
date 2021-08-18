@@ -7,6 +7,12 @@ import { AppState } from '../shared/app.state';
   styleUrls: ['./contact.component.scss'],
 })
 export class ContactComponent implements OnInit {
+  firstname: string = '';
+  name: string = '';
+  phone: string = '';
+  email: string = '';
+  message: string = '';
+
   constructor(public appState: AppState) {}
 
   ngOnInit(): void {
