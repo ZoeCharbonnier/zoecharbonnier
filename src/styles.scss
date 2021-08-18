@@ -2,7 +2,7 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-@import url("https://fonts.googleapis.com/css2?family=Style+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
 
 html,
 body {
@@ -11,13 +11,19 @@ body {
 body {
   margin: 0;
   // font-family: Roboto, "Helvetica Neue", sans-serif;
-  font-family: sans-serif, "Helvetica Neue";
+  //font-family: sans-serif, "Helvetica Neue";
 }
 
 .style-script-20 {
-  font-family: "Style Script", cursive;
+  font-family: "Open Sans Condensed", sans-serif;
 }
 
 .white-icon {
   color: white;
+}
+
+.overflow-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
