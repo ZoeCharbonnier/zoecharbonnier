@@ -20,8 +20,9 @@
         <div routerLink="/projects">Projects</div>
         <div>
           <button mat-button [matMenuTriggerFor]="italent">
-            <div>ITalent</div>
+            <div><p class="text-xl">ITalent</p></div>
           </button>
+
           <mat-menu #italent="matMenu">
             <button mat-menu-item routerLink="/italent/plan">Plan</button>
             <button mat-menu-item routerLink="/italent/projects">
@@ -55,10 +56,27 @@
 
 <div class="min-h-2/5 pt-20"><router-outlet></router-outlet></div>
 <footer class="bg-black h-1/5">
-  <div class="flex flex-row justify-center h-full">
-    <button (click)="navigateToFacebook()">
-      <mat-icon class="white-icon">facebook</mat-icon>
-    </button>
-    <button><mat-icon class="white-icon">linkedin</mat-icon></button>
+  <div class="flex flex-row gap-5 justify-center h-full">
+    <div class="bg-pink-900 space-x-4">
+      <button
+        (click)="appService.navigateToLinkedIn()"
+        class="h-full align-middle"
+      >
+        <mat-icon class="white-icon" svgIcon="linkedin"></mat-icon>
+      </button>
+      <button
+        (click)="appService.navigateToGithub()"
+        class="h-full align-middle"
+      >
+        <mat-icon class="white-icon" svgIcon="github"></mat-icon>
+      </button>
+      <button
+        (click)="appService.navigateToFacebook()"
+        class="h-full align-middle"
+      >
+        <mat-icon class="white-icon">facebook</mat-icon>
+      </button>
+    </div>
   </div>
+  <div><p class="text-sm text-white">© 2021 - Zoé Charbonnier_</p></div>
 </footer>

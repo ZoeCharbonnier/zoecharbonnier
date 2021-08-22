@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { AppState } from '../shared/app.state';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import { AppService } from '../shared/services/app.service';
+import { AppState } from '../shared/states/app.state';
 
 @Component({
   selector: 'app-contact',
@@ -7,13 +9,19 @@ import { AppState } from '../shared/app.state';
   styleUrls: ['./contact.component.scss'],
 })
 export class ContactComponent implements OnInit {
-  firstname: string = '';
-  name: string = '';
-  phone: string = '';
-  email: string = '';
-  message: string = '';
+  form: FormGroup = this.fb.group({
+    firstname: [null],
+    name: [null],
+    phone: [null],
+    email: [null],
+    message: [null],
+  });
 
-  constructor(public appState: AppState) {}
+  constructor(
+    public appState: AppState,
+    public appService: AppService,
+    private fb: FormBuilder
+  ) {}
 
   ngOnInit(): void {
     this.appState.header$.next('Contact');

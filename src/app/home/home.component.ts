@@ -1,5 +1,6 @@
 import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
-import { AppState } from '../shared/app.state';
+import { AppService } from '../shared/services/app.service';
+import { AppState } from '../shared/states/app.state';
 
 @Component({
   selector: 'app-home',
@@ -10,7 +11,11 @@ export class HomeComponent implements OnInit {
   header = 'Zoé Charbonnier';
   subheader = 'Full Stack Developer';
 
-  constructor(public appState: AppState, private cd: ChangeDetectorRef) {}
+  constructor(
+    public appState: AppState,
+    public appService: AppService,
+    private cd: ChangeDetectorRef
+  ) {}
 
   ngOnInit(): void {
     this.appState.header$.subscribe((header: string) => {
@@ -23,6 +28,4 @@ export class HomeComponent implements OnInit {
       this.cd.detectChanges();
     });
   }
-
-  navigateToFacebook(): void {}
 }

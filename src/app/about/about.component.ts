@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
-import { AppState } from '../shared/app.state';
+import { AppState } from '../shared/states/app.state';
 
 @Component({
   selector: 'app-about',

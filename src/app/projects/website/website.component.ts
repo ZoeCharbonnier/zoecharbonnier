@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AppState } from 'src/app/shared/app.state';
+import { AppState } from 'src/app/shared/states/app.state';
 
 @Component({
   selector: 'app-website',
