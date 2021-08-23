@@ -9,8 +9,9 @@ module.exports = {
   darkMode: "class", // or 'media' or 'class'
   theme: {
     fontFamily: {
-      headline: "Lato, sans-serif",
-      header: "Roboto, sans-serif",
+      lato: "Lato, sans-serif",
+      roboto: "Roboto, sans-serif",
+      urbanist: "Urbanist, sans-serif",
     },
     extend: {
       minHeight: {
