@@ -17,7 +17,7 @@
       <div class="text-xl w-1/6">E-mail</div>
       <div class="text-xl w-5/6">zoe.charbonnier@hotmail.com</div>
     </div>
-    <div class="flex flex-row gap-1">
+    <div class="flex flex-row gap-1 items-center">
       <div class="text-xl w-1/6">Social</div>
       <div class="w-5/6 flex gap-5">
         <button mat-icon-button (click)="appService.navigateToFacebook()">
@@ -35,7 +35,20 @@
       </div>
     </div>
     <div>
-      <button mat-raised-button (click)="downloadCV.click()">
+      <button
+        mat-raised-button
+        (click)="downloadCV.click()"
+        class="
+          bg-yellow-300
+          hover:bg-yellow-400
+          focus:outline-none
+          focus:ring-2
+          focus:ring-yellow-300
+          focus:ring-opacity-50
+          font-header font-bold
+          text-base
+        "
+      >
         DOWNLOAD CV
       </button>
       <a
@@ -48,39 +61,46 @@
   </div>
   <div class="flex flex-col gap-3 w-2/4">
     <div class="text-5xl">Send me a message</div>
-    <div class="flex flex-row gap-5">
-      <div class="w-2/4">
-        <mat-form-field class="w-full">
-          <input matInput placeholder="Firstname" formControlName="firstname" />
-        </mat-form-field>
+    <form [formGroup]="form" autocomplete="off">
+      <div class="flex flex-row gap-5">
+        <div class="w-2/4">
+          <mat-form-field class="w-full">
+            <input
+              matInput
+              placeholder="Firstname"
+              formControlName="firstname"
+            />
+          </mat-form-field>
+        </div>
+        <div class="w-2/4">
+          <mat-form-field class="w-full">
+            <input matInput placeholder="Name" formControlName="name" />
+          </mat-form-field>
+        </div>
       </div>
-      <div class="w-2/4">
-        <mat-form-field class="w-full">
-          <input matInput placeholder="Name" formControlName="name" />
-        </mat-form-field>
-      </div>
-    </div>
 
-    <div class="flex flex-row gap-5">
-      <div class="w-2/4">
+      <div class="flex flex-row gap-5">
+        <div class="w-2/4">
+          <mat-form-field class="w-full">
+            <input matInput placeholder="Phone" formControlName="phone" />
+          </mat-form-field>
+        </div>
+        <div class="w-2/4">
+          <mat-form-field class="w-full">
+            <input matInput placeholder="Email" formControlName="email" />
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="w-full">
         <mat-form-field class="w-full">
-          <input matInput placeholder="Phone" formControlName="phone" />
+          <mat-label>Message</mat-label>
+          <textarea matInput formControlName="message"></textarea>
         </mat-form-field>
       </div>
-      <div class="w-2/4">
-        <mat-form-field class="w-full">
-          <input matInput placeholder="Email" formControlName="email" />
-        </mat-form-field>
+      <div class="flex justify-items-end">
+        <button mat-raised-button>Submit</button>
       </div>
-    </div>
-    <div class="w-full">
-      <mat-form-field class="w-full">
-        <mat-label>Message</mat-label>
-        <textarea matInput formControlName="message"></textarea>
-      </mat-form-field>
-    </div>
-    <div class="flex justify-items-end">
-      <button mat-raised-button>Submit</button>
-    </div>
+    </form>
   </div>
 </div>

@@ -14,7 +14,8 @@
     Ik heb gebruik gemaakt van Angular Material, een UI-componentenbibliotheek
     voor het bouwen van aantrekkelijke, consistente en functionele webpagina's.
     In de eerste plaats heb ik de documentatie van Angular Material doorgenomen
-    en gekeken welke componenten ik kon gebruiken voor mijn website.
+    en gekeken welke componenten ik kon gebruiken voor mijn website. De input
+    componenten en cards wou ik zeker implementeren.
   </p>
 
   <p class="text-justify text-xl pb-10">
@@ -22,20 +23,21 @@
     te creëren. In tegenstelling tot Bootstrap komt Tailwindcss niet met
     voorgedefinieerde componenten maar voorziet het een set van CSS helper
     klasses. Deze klasses kunnen eenvoudig en snel gebruikt worden doorheen het
-    project.
+    project. Via het YouTube kanaal Tailwind Labs heb ik veel inzichten gekregen
+    in de mogelijkheden die het framework te bieden heeft.
   </p>
 
   <p class="text-justify text-xl">
     Mijn doel bij het ontwikkelen van deze website is om zoveel mogelijk kennis
     rond Angular, Angular Material en Tailwindcss op te doen voornamelijk omdat
-    ik deze kant uit wil in mijn volgende job. Ik heb bij het maken extra
-    aandacht besteed om de website zo gebruiksvriendelijk en intuïtief mogelijk
-    te maken. Wat de layout betreft wou ik zoveel mogelijk verschillende klasses
-    van Tailwind uitproberen. Ik wist op voorhand dat ik nooit hetzelfde niveau
-    van website zou kunnen bereiken dan wanneer ik deze website zou maken met
-    behulp van een content management systeem maar het hoofddoel hier was niet
-    om de mooiste website te maken maar eerder zoveel mogelijk kennis rond
-    bovenstaande technologieën op te doen.
+    ik deze kant uit wil in de toekomst. Ik heb bij het maken extra aandacht
+    besteed om de website zo gebruiksvriendelijk en intuïtief mogelijk te maken.
+    Wat de layout betreft wou ik zoveel mogelijk verschillende klasses van
+    Tailwind uitproberen. Ik wist op voorhand dat ik nooit hetzelfde niveau van
+    website zou kunnen bereiken dan wanneer ik deze website zou maken met behulp
+    van een content management systeem en kant-en-klare sjablonen. Het hoofddoel
+    hier was niet om de mooiste website te maken maar eerder zoveel mogelijk
+    kennis rond bovenstaande technologieën op te doen.
   </p>
 </div>
 
@@ -43,21 +45,62 @@
   <div class="text-5xl text-center mb-4">Uitvoeren</div>
   <div class="border-b-2 mb-12"></div>
 
-  <img
-    class="border-black border-opacity-10 float-right h-40 w-auto ml-4"
-    src="assets/lazy-loading.png"
-    alt="salesforce"
-  />
-  <p class="text-justify text-xl">
+  <p class="text-justify text-xl pb-5">
     Eens ik door alle documentatie ben gegaan was het tijd om aan de slag te
-    gaan. Ik ben begonnen met het uitdenken van hoe de website er structureel
-    moest uitzien. Hiermee bedoel ik meer bepaald het opdelen van de website in
-    verschillende modules en de routering die hierbij hoort. Een module is een
-    soort van container voor samenhangende code die de applicatie in kleinere
-    onderdelen verdeelt. Modules zorgen voor een betere performantie doordat ze
-    lazy loading mogelijk maken waardoor een module enkel laadt wanneer deze
-    nodig is. Onderstaande screenshot geeft de routering met behulp van lazy
-    loading weer:
+    gaan. Volgende stappen heb ik doorlopen om tot het eindresultaat te komen.
+  </p>
+  <ol class="list-decimal text-xl mb-10 ml-5">
+    <li>
+      <p class="text-justify text-xl">Algemene structuur van website</p>
+    </li>
+    <li>
+      <p class="text-justify text-xl">
+        Structuur in code opzetten (modules, componenten, routering)
+      </p>
+    </li>
+    <li>
+      <p class="text-justify text-xl">Tekst invoegen</p>
+    </li>
+    <li>
+      <p class="text-justify text-xl">UI schikken m.b.v. Tailwindcss</p>
+    </li>
+    <li>
+      <p class="text-justify text-xl">Hosting</p>
+    </li>
+  </ol>
+  <p class="text-justify text-xl pb-10">
+    Ik ben begonnen met het uitdenken van hoe de website er structureel moest
+    uitzien. Hierbij denk ik aan de verschillende pagina’s die ik wou opnemen,
+    welke content waar moest komen… Vervolgens ben ik deze structuur in code
+    gaan opzetten. Hiermee bedoel ik meer bepaald het opdelen van de website in
+    verschillende modules, componenten en de routering die hierbij hoort. Een
+    module is een soort van container voor samenhangende code die de applicatie
+    in kleinere onderdelen verdeelt. Ik wou werken met modules omdat deze zorgen
+    voor een betere performantie doordat ze lazy loading mogelijk maken waardoor
+    een module enkel laadt wanneer deze nodig is. Onderstaande screenshot geeft
+    de routering met behulp van lazy loading weer:
+  </p>
+  <div class="flex justify-center">
+    <img
+      class="transform hover:scale-125 transition duration-300 pb-10"
+      src="assets/lazy-loading.png"
+      alt="salesforce"
+    />
+  </div>
+  <p class="text-justify text-xl pb-10">
+    Vervolgens heb ik al mijn geschreven content op de juiste plaats ingevoegd.
+    Daarna was het tijd voor de UI onder handen te nemen. Dit ging relatief vlot
+    omdat Tailwind zeer gemakkelijk en aangenaam is om te gebruiken.
+  </p>
+  <p class="text-justify text-xl pb-10">
+    De laatste stap was het hosten van de website. Aangezien de
+    afstudeerrichting van Switch2IT software development is, zijn wij relatief
+    weinig in contact gekomen met het deployen en hosten van applicaties. Daarom
+    was het even zoeken naar hoe ik dit het best zou aanpakken. Ik heb
+    verschillende hosting diensten onderzocht van AWS, Microsoft Azure tot
+    Firebase. Ik heb voor Firebase gekozen omdat we hier tijdens de opleiding
+    mee in aanraking zijn gekomen. Na wat opzoekwerk en enkele YouTube tutorials
+    is het mij gelukt om mijn website te hosten.
   </p>
 </div>
 
@@ -84,16 +127,16 @@
     Tailwind zeer aangenaam om mee te werken, goede documentatie en duidelijke
     voorbeelden zijn online te vinden.
   </p>
+  <p class="text-justify text-xl pb-10">
+    Wat ik vooral een groot voordeel vind van Angular is dat het framework
+    verschillende handvaten biedt om gestructureerd te werken. Ook de
+    documentatie van Angular is echt een meerwaarde. Wat Tailwind betreft ben ik
+    aangenaam verrast hoe snel en gemakkelijk het is om de UI aan te passen. Het
+    nadeel is wel dat het nog relatief nieuw is en bij problemen weinig
+    oplossingen online te vinden zijn.
+  </p>
   <p class="text-justify text-xl">
-    De laatste stap was het hosten van de website. Aangezien de
-    afstudeerrichting van Switch2IT software development is, zijn wij relatief
-    weinig in contact gekomen met het deployen en hosten van applicaties. Daarom
-    was het even zoeken naar hoe ik dit het best zou aanpakken. Ik heb
-    verschillende hosting diensten onderzocht van AWS, Microsoft Azure tot
-    Firebase. Ik heb voor Firebase gekozen omdat we hier tijdens de opleiding
-    mee in aanraking zijn gekomen. Na wat opzoekwerk en enkele YouTube tutorials
-    is het mij gelukt om mijn website te hosten. Van alle projecten die ik heb
-    gedaan, vond ik deze het leukste om te doen en heb ik het gevoel dat ik hier
-    het meest aan ga hebben naar de toekomst toe.
+    Van alle projecten die ik heb gedaan, vond ik deze het leukst om te doen en
+    heb ik het gevoel dat ik hier het meest aan ga hebben naar de toekomst toe.
   </p>
 </div>

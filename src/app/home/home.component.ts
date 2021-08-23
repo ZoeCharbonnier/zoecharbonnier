@@ -21,11 +21,13 @@ export class HomeComponent implements OnInit {
     this.appState.header$.subscribe((header: string) => {
       this.header = header;
       this.cd.detectChanges();
+      console.log('Detect changes header');
     });
 
     this.appState.subheader$.subscribe((subheader: string) => {
       this.subheader = subheader;
       this.cd.detectChanges();
+      console.log('Detect changes subheader');
     });
   }
 }

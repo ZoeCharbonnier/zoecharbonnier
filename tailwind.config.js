@@ -12,7 +12,6 @@ module.exports = {
       headline: "Lato, sans-serif",
       header: "Roboto, sans-serif",
     },
-    scale: ["active", "group-hover"],
     extend: {
       minHeight: {
         0: "0",

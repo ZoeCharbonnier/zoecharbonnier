@@ -20,12 +20,14 @@
             mat-raised-button
             (click)="downloadCV.click()"
             class="
-              bg-gray-400
-              hover:bg-gray-500
+              bg-yellow-300
+              hover:bg-yellow-400
               focus:outline-none
               focus:ring-2
-              focus:ring-gray-400
+              focus:ring-yellow-300
               focus:ring-opacity-50
+              font-header font-bold
+              text-base
             "
           >
             DOWNLOAD CV
@@ -81,36 +83,41 @@
     </div>
   </div>
 </div>
-
-<div class="min-h-2/5 pt-20"><router-outlet></router-outlet></div>
+<div class="min-h-2/5 pt-20 bg-re"><router-outlet></router-outlet></div>
 <footer class="bg-black h-1/5">
-  <div class="flex flex-row gap-5 justify-center h-full">
-    <div class="space-x-4">
-      <button
-        (click)="appService.navigateToLinkedIn()"
-        class="h-full align-middle"
-      >
-        <mat-icon class="white-icon" svgIcon="linkedin"></mat-icon>
-      </button>
-      <button
-        (click)="appService.navigateToGithub()"
-        class="h-full align-middle"
-      >
-        <mat-icon class="white-icon" svgIcon="github"></mat-icon>
-      </button>
-      <button
-        (click)="appService.navigateToFacebook()"
-        class="h-full align-middle"
-      >
-        <mat-icon class="white-icon">facebook</mat-icon>
-      </button>
-      <button
-        (click)="appService.navigateToWhatsapp()"
-        class="h-full align-middle"
-      >
-        <mat-icon class="white-icon" svgIcon="whatsapp"></mat-icon>
-      </button>
+  <div class="flex flex-wrap content-center h-full">
+    <div class="flex flex-col gap-5 justify-center w-full">
+      <div class="flex flex-row gap-5 justify-center">
+        <div class="space-x-4">
+          <button
+            (click)="appService.navigateToLinkedIn()"
+            class="h-full align-middle"
+          >
+            <mat-icon class="white-icon" svgIcon="linkedin"></mat-icon>
+          </button>
+          <button
+            (click)="appService.navigateToGithub()"
+            class="h-full align-middle"
+          >
+            <mat-icon class="white-icon" svgIcon="github"></mat-icon>
+          </button>
+          <button
+            (click)="appService.navigateToFacebook()"
+            class="h-full align-middle"
+          >
+            <mat-icon class="white-icon">facebook</mat-icon>
+          </button>
+          <button
+            (click)="appService.navigateToWhatsapp()"
+            class="h-full align-middle"
+          >
+            <mat-icon class="white-icon" svgIcon="whatsapp"></mat-icon>
+          </button>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <p class="text-sm text-white">© 2021 - Zoé Charbonnier</p>
+      </div>
     </div>
   </div>
-  <div><p class="text-sm text-white">© 2021 - Zoé Charbonnier_</p></div>
 </footer>
