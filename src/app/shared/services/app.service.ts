@@ -17,4 +17,8 @@ export class AppService {
   navigateToGithub(): void {
     window.open('https://github.com/ZoeCharbonnier');
   }
+
+  navigateToWhatsapp(): void {
+    window.open('https://wa.me/0032479821759');
+  }
 }

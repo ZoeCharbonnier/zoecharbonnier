@@ -20,5 +20,9 @@ export class AppComponent {
       'github',
       domSanitizer.bypassSecurityTrustResourceUrl('../assets/github.svg')
     );
+    matIconRegistry.addSvgIcon(
+      'whatsapp',
+      domSanitizer.bypassSecurityTrustResourceUrl('../assets/whatsapp.svg')
+    );
   }
 }
